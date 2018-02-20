@@ -1,27 +1,33 @@
 @font-face {
     font-family: "ultra";
-    src:url("fonts/ultra.ttf");
+    src: url("fonts/ultra.ttf");
 }
+
 @font-face {
     font-family: "regular";
-    src:url("fonts/regular.ttf");
+    src: url("fonts/regular.ttf");
 }
+
 @font-face {
     font-family: "number";
-    src:url("fonts/number.ttf");
+    src: url("fonts/number.ttf");
 }
+
 @font-face {
     font-family: "bold";
-    src:url("fonts/bold.ttf");
+    src: url("fonts/bold.ttf");
 }
+
 @font-face {
     font-family: "light";
-    src:url("fonts/light.ttf");
+    src: url("fonts/light.ttf");
 }
+
 @font-face {
     font-family: "medium";
-    src:url("fonts/medium.ttf");
+    src: url("fonts/medium.ttf");
 }
+
 html * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -39,8 +45,8 @@ html * {
 
 body {
     font-size: 100%;
-    color: #878cb0;
-    background-color: #3f435f;
+    color: #1E2763;
+    background-color: #182050;
 }
 
 a {
@@ -56,7 +62,7 @@ h1, h2 {
     color: #ffffff;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Modules - reusable parts of our design
 
@@ -76,19 +82,24 @@ Modules - reusable parts of our design
     transition: background-color 0.2s;
     font-family: 'ultra';
 }
+
 .no-touch .btn:hover {
     background-color: #787ea5;
 }
+
 .disabled_btn {
     background-color: #757575;
     opacity: 0.3;
 }
+
 .btn.salmon {
     background-color: #f58780;
 }
+
 .no-touch .btn.salmon:hover {
     background-color: #f79d98;
 }
+
 @media only screen and (min-width: 1070px) {
     .btn {
         font-size: 14px;
@@ -97,9 +108,9 @@ Modules - reusable parts of our design
     }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main components 
+Main components
 
 -------------------------------- */
 html, body {
@@ -133,30 +144,36 @@ html, body {
     -moz-transition: -moz-transform 0.3s;
     transition: transform 0.3s;
 }
+
 .cd-header:after {
     content: "";
     display: table;
     clear: both;
 }
+
 .cd-header #cd-logo {
     float: left;
     margin: 18px 0 0 5%;
 }
+
 .cd-header #cd-logo img {
     display: block;
     width: 60px;
     height: 18px;
 }
+
 .cd-header #cd-action {
     display: inline-block;
     float: right;
     margin: 10px 5% 0 0;
 }
+
 .cd-header .btn {
     height: 30px;
     line-height: 30px;
     padding: 0 2em;
 }
+
 .cd-header.slide-down {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -164,23 +181,28 @@ html, body {
     -o-transform: translateY(0);
     transform: translateY(0);
 }
+
 @media only screen and (min-width: 1070px) {
     .cd-header {
         height: 90px;
         background-color: transparent;
     }
+
     .cd-header #cd-logo {
         margin-top: 32px;
         font-size: 28px;
         font-size: 1.75rem;
     }
+
     .cd-header #cd-logo img {
         width: 80px;
         height: 25px;
     }
+
     .cd-header #cd-action {
         margin: 20px 5% 0 0;
     }
+
     .cd-header .btn {
         height: 50px;
         line-height: 50px;
@@ -192,6 +214,7 @@ html, body {
     max-width: 1440px;
     margin: 0 auto;
 }
+
 @media only screen and (min-width: 1070px) {
     .cd-main-content {
         position: relative;
@@ -205,6 +228,7 @@ html, body {
     padding: 50px 5%;
     text-align: center;
 }
+
 .cd-product-intro h1 {
     margin-bottom: 10px;
     font-weight: 100;
@@ -213,6 +237,7 @@ html, body {
     font-weight: 700;
     line-height: 1.2;
 }
+
 .cd-product-intro p {
     padding: 0 0 20px;
     font-size: 14px;
@@ -221,27 +246,32 @@ html, body {
     max-width: 560px;
     margin: 0 auto;
 }
+
 .cd-product-intro .cd-triggers:after {
     content: "";
     display: table;
     clear: both;
 }
+
 .cd-product-intro .btn {
     width: 120px;
     height: 40px;
     line-height: 40px;
     margin-right: 8px;
 }
+
 @media only screen and (min-width: 480px) {
     .cd-product-intro {
         padding: 50px 10%;
     }
 }
+
 @media only screen and (min-width: 850px) {
     .cd-product-intro {
         padding: 50px 15%;
     }
 }
+
 @media only screen and (min-width: 1070px) {
     .cd-product-intro {
         /* Force Hardware Acceleration in WebKit */
@@ -267,6 +297,7 @@ html, body {
         -moz-transition: -moz-transform 0.3s 0s, opacity 0.3s;
         transition: transform 0.3s, opacity 0.3s;
     }
+
     .is-product-tour .cd-product-intro {
         opacity: 0;
         -webkit-transform: translateY(-50%) translateX(-50%);
@@ -275,16 +306,19 @@ html, body {
         -o-transform: translateY(-50%) translateX(-50%);
         transform: translateY(-50%) translateX(-50%);
     }
+
     .cd-product-intro h1 {
         font-size: 50px;
         font-size: 3.125rem;
     }
+
     .cd-product-intro p {
         font-size: 16px;
         font-size: 1rem;
         padding: 10px 0 44px;
         margin: 0;
     }
+
     .cd-product-intro .btn {
         margin-right: 15px;
         width: 190px;
@@ -296,6 +330,7 @@ html, body {
 #cd-product-tour {
     position: relative;
 }
+
 @media only screen and (min-width: 1070px) {
     #cd-product-tour {
         width: 100%;
@@ -318,6 +353,7 @@ html, body {
         -moz-transition: -moz-transform 0.3s;
         transition: transform 0.3s;
     }
+
     .is-product-tour #cd-product-tour {
         -webkit-transform: translateY(-50%) translateX(0);
         -moz-transform: translateY(-50%) translateX(0);
@@ -325,6 +361,7 @@ html, body {
         -o-transform: translateY(-50%) translateX(0);
         transform: translateY(-50%) translateX(0);
     }
+
     #cd-product-tour > ul {
         height: 100%;
         width: 100%;
@@ -338,40 +375,48 @@ html, body {
     text-align: center;
     border-top: 1px solid #494e6e;
 }
+
 .cd-single-item h2 {
     margin-bottom: 15px;
     font-size: 22px;
     font-size: 1.375rem;
 }
+
 .cd-single-item p {
     padding: 10px 0 50px;
     font-size: 14px;
     font-size: 0.875rem;
     line-height: 1.6;
 }
+
 @media only screen and (min-width: 480px) {
     .cd-single-item {
         padding: 50px 10% 120px;
     }
 }
+
 @media only screen and (min-width: 850px) {
     .cd-single-item {
         padding: 50px 15% 120px;
     }
+
     .cd-single-item:after {
         content: "";
         display: table;
         clear: both;
     }
+
     .cd-single-item .cd-caption {
         width: 50%;
         float: left;
         margin-top: 180px;
     }
+
     .cd-single-item:nth-child(2n) .cd-caption {
         float: right;
     }
 }
+
 @media only screen and (min-width: 1070px) {
     .cd-single-item {
         position: absolute;
@@ -387,22 +432,26 @@ html, body {
         padding: 0;
         visibility: visible;
     }
+
     .cd-single-item.cd-not-visible {
         /*need to create a specific class to change visibility value due to a Firefox bug*/
         /*CSS transition/animation fails when parent element changes visibility attribute*/
         visibility: hidden;
     }
+
     .cd-single-item h2 {
         font-size: 48px;
         font-size: 3rem;
         font-weight: 300;
     }
+
     .cd-single-item p {
         font-size: 16px;
         font-size: 1rem;
         line-height: 1.5;
         max-width: 600px;
     }
+
     .cd-single-item .cd-caption {
         width: 60%;
         float: right;
@@ -417,9 +466,11 @@ html, body {
         -moz-transition: -moz-transform 0.3s 0s, opacity 0.3s;
         transition: transform 0.3s, opacity 0.3s;
     }
+
     .is-product-tour .cd-single-item.cd-active .cd-caption {
         opacity: 1;
     }
+
     .cd-single-item.cd-move-right .cd-caption {
         -webkit-transform: translateX(100px);
         -moz-transform: translateX(100px);
@@ -435,23 +486,29 @@ html, body {
     margin: 0 auto;
     padding-top: 50px;
 }
+
 .cd-image-container > div {
     position: relative;
 }
+
 .cd-image-container img {
     display: block;
 }
+
 .cd-image-container video {
     display: none;
 }
+
 @media only screen and (min-width: 850px) {
     .cd-image-container {
         float: right;
     }
+
     .cd-single-item:nth-child(2n) .cd-image-container {
         float: left;
     }
 }
+
 @media only screen and (min-width: 1070px) {
     .cd-image-container {
         height: 402px;
@@ -460,11 +517,13 @@ html, body {
         max-width: none;
         padding-top: 0;
     }
+
     .cd-image-container > div {
         display: inline-block;
         max-width: 100%;
         max-height: 100%;
     }
+
     .cd-image-container img {
         height: 402px;
         -webkit-transition: -webkit-transform 0.3s;
@@ -476,6 +535,7 @@ html, body {
         -o-transform: translateZ(0);
         transform: translateZ(0);
     }
+
     .cd-image-container video {
         /*not inserted in html - will be loaded through jQuery*/
         display: block;
@@ -500,6 +560,7 @@ html, body {
         -o-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
         transform: translateX(-50%) translateY(-50%) rotate(-90deg);
     }
+
     .cd-move-right .cd-image-container img {
         -webkit-transform: translateX(100%);
         -moz-transform: translateX(100%);
@@ -507,6 +568,7 @@ html, body {
         -o-transform: translateX(100%);
         transform: translateX(100%);
     }
+
     .cd-move-right .cd-image-container video {
         -webkit-transform: translateX(50%) translateY(-50%) rotate(-90deg);
         -moz-transform: translateX(50%) translateY(-50%) rotate(-90deg);
@@ -526,13 +588,14 @@ html, body {
     left: -10px;
     width: 100%;
     height: 100%;
-    border-color: #2f3246;
+    border-color: #060814;
     border-style: solid;
     border-width: 45px 10px;
     border-radius: 2.5em;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
+
 .cd-phone-frame::after, .cd-phone-frame::before {
     /*these are the iPhone circle elements*/
     position: absolute;
@@ -548,11 +611,13 @@ html, body {
     background-color: #202331;
     border-radius: 50%;
 }
+
 .cd-phone-frame::before {
     height: 11px;
     width: 11px;
     top: -28px;
 }
+
 .cd-phone-frame::after {
     height: 31px;
     width: 31px;
@@ -575,11 +640,13 @@ html, body {
     width: 100%;
     height: 80px;
 }
+
 .cd-slider-nav:after {
     content: "";
     display: table;
     clear: both;
 }
+
 .cd-slider-nav a {
     position: relative;
     display: block;
@@ -590,11 +657,13 @@ html, body {
     text-indent: 100%;
     white-space: nowrap;
     color: transparent;
-    background: #353850;
+    background: #12183C;
 }
+
 .no-touch .cd-slider-nav a:hover {
-    background: #2f3246;
+    background: #060814;
 }
+
 .cd-slider-nav a::before {
     /*this is the bacgrounf arrow - we have been used a before element to change the opacity on hover*/
     position: absolute;
@@ -617,12 +686,15 @@ html, body {
     -moz-transition: opacity 0.2s;
     transition: opacity 0.2s;
 }
+
 .no-touch .cd-slider-nav a:hover::before {
     opacity: 1;
 }
+
 .cd-slider-nav .cd-next {
     border-left: 1px solid #3f435f;
 }
+
 .cd-slider-nav .cd-next::before {
     -webkit-transform: translateX(-50%) translateY(-50%) rotate(180deg);
     -moz-transform: translateX(-50%) translateY(-50%) rotate(180deg);
@@ -630,10 +702,12 @@ html, body {
     -o-transform: translateX(-50%) translateY(-50%) rotate(180deg);
     transform: translateX(-50%) translateY(-50%) rotate(180deg);
 }
+
 @media only screen and (min-width: 1070px) {
     .cd-slider-nav {
         display: block;
     }
+
     .cd-slider-nav a {
         visibility: hidden;
         opacity: 0;
@@ -641,6 +715,7 @@ html, body {
         -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s, background 0.2s;
         transition: opacity 0.3s 0s, visibility 0s 0.3s, background 0.2s;
     }
+
     .is-product-tour .cd-slider-nav a {
         visibility: visible;
         opacity: 1;
@@ -648,6 +723,7 @@ html, body {
         -moz-transition: opacity 0.3s 0s, visibility 0s 0s, background 0.2s;
         transition: opacity 0.3s 0s, visibility 0s 0s, background 0.2s;
     }
+
     .is-product-tour .cd-slider-nav a.cd-inactive {
         visibility: hidden;
         opacity: 0;
@@ -668,14 +744,14 @@ html, body {
     display: none;
 }
 
-#description_text{
-    font-family: 'ultra';
+#description_text {
+    font-family: 'ultra', serif;
     text-align: justify;
     direction: rtl;
-    color:#A2A9D5;
+    color: #BFBFBF;
 }
 
-#description_title{
-    font-family: 'bold';
+#description_title {
+    font-family: 'bold', serif;
     direction: rtl;
 }

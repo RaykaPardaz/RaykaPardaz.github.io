@@ -1,115 +1,205 @@
 <!doctype html>
 <html lang="en" class="no-js">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/style.css">
-        <script src="js/modernizr.js"></script>
-        <title>برنامه کاربردی رایکا پرداز</title>
-        <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-    </head>
-    <body>
-        <header class = "cd-header">
-            <div id = "cd-logo"><img src="img/cd-logo.png" alt="Logo"></div>
-        </header>
-        <main class = "cd-main-content">
-            <div class = "cd-product-intro">
-                <h1 id = "description_title">اپلیکیشن رایکا</h1>
-                <p id = "description_text">پس انداز کردن پولی که هر روز در حال از دست دادن ارزش خود است به تنهایی کافی نیست، بلکه این سرمایه گذاری است که شما را ثروتمند می کند. در نرم افزار رایکا تمامی صندوق های سرمایه گذاری، اوراق مشارکت، بانک ها، اسناد خزانه اسلامی و . همگی به صورت یک جا دسته بندی شده اند تا دسترسی و مقایسه میزان سود و تحلیل آن ها آسان تر گردد.
-                </p>
-                <div class = "cd-triggers">
-                    <a href = "#" class="btn disabled_btn">دانلود</a>
-                    <a href = "#cd-product-tour" class="btn" data-type="cd-tour">ادامه</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/modernizr.js"></script>
+    <title>رایکا</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
+</head>
+<body>
+<header class="cd-header">
+    <div id="cd-logo"><img src="img/cd-logo.png" alt="Logo"></div>
+</header>
+<main class="cd-main-content">
+    <div class="cd-product-intro">
+        <h1 id="description_title">سامانه استعلام اسناد خزانه اسلامی</h1>
+        <p id="description_text">استعلام آنلاین قیمت اسناد خزانه اسلامی و مقایسه با سایر ابزارهای مالی، بانک ها و صندوق
+            های با درآمد ثابت</p>
+        <p id="description_text">
+            <a href="#cd-product-tour"
+               style="font-size: xx-large; color: #FFFFFF; text-decoration: none;border-bottom: 2px solid black; padding-bottom: 0; line-height: 70%;">
+                ادامه مطلب
+            </a>
+        </p>
+        <img src="img/bazaar.png" width="190" height="56">
+        <img src="img/google-play-badge.png" width="190" height="56">
+    </div>
+    <div id="cd-product-tour">
+        <ul>
+            <li class="cd-single-item cd-active">
+                <div class="cd-caption">
+                    <h2 id="description_title">اسناد خزانه</h2>
+                    <p id="description_text">
+                        این اسناد، اوراق بهادار با نامی است که دولت آن را به جای بدهی‌های خود بابت طرح‌های تملک
+                        دارایی‌های سرمایه‌ای با قیمت اسمی و سررسید معین به طلبکاران غیردولتی واگذار می‌کند. که به دلیل
+                        بازدهی مناسب به یک ابزار مالی جذاب برای سرمایه گذاران تبدیل شده است.
+                        <br>
+                        نرخ بازده تا سررسید قیمت میانگین معاملات طی روز در صفحه اول به صورت لیست شده با قابلیت مرتب کردن
+                        اطلاعات بر اساس سود صعودی و نزولی و جست و جو نام نماد آورده شده است.
+
+                    </p>
+
                 </div>
-            </div>
-            <div id = "cd-product-tour">
-                <ul>
-                    <li class = "cd-single-item cd-active">
-                        <div class = "cd-caption">
-                            <h2 id = "description_title">در یک نگاه</h2>
-                            <p id="description_text">شما در یک نگاه می توانید به اوراق، بانک ها و صندوق هایی با بالاترین میزان سود دسترسی داشته باشید. در این قسمت بهترین های هر گروه تجمیع شده اند.</p>
+                <div class="cd-image-container">
+                    <div>
+                        <div class="cd-phone-frame"></div>
+                        <div class="cd-image-wrapper">
+                            <img src="img/screen-1.png" data-video="video/video-1" alt="">
                         </div>
-                        <div class = "cd-image-container">
-                            <div>
-                                <div class = "cd-phone-frame"></div>
-                                <div class = "cd-image-wrapper">
-                                    <img src = "img/screen-1.png" data-video = "video/video-1" alt = "">
-                                </div>
-                            </div>
+                    </div>
+                </div>
+            </li>
+            <li class="cd-single-item cd-not-visible cd-move-right">
+                <div class="cd-caption">
+                    <h2 id="description_title">اسناد خزانه</h2>
+                    <p id="description_text">
+                        در برنامه ارائه سفارشات عرضه و تقاضا و نرخ بازده تا سررسید هر سفارش از پنل معاملاتی
+                        بورس درنظر گرفته شده است تا با مشاهده آنلاین معاملات و اطلاع از سررسید اوراق، سرمایه گذار به
+                        سادگی بازده مورد نظر خود را با قیمتهای فعلی بازار مقایسه و در صورت جذاب بودن اقدام به معامله
+                        نماید.<br>
+                        بعلاوه جهت سهولت امر، ماشین حساب محاسبه نرخ بازده تا سررسید طراحی و در اختیار کاربر قرار گرفته
+                        است که با وارد کردن قیمت خرید برگه مورد نظر و ورود تاریخ خرید نرخ بازده تا سررسید محاسبه میشود.
+                    </p>
+                </div>
+                <div class="cd-image-container">
+                    <div>
+                        <div class="cd-phone-frame"></div>
+                        <div class="cd-image-wrapper">
+                            <img src="img/screen-2.png" data-video="video/video-2" alt="">
                         </div>
-                    </li>
-                    <li class = "cd-single-item cd-not-visible cd-move-right">
-                        <div class = "cd-caption">
-                            <h2 id = "description_title">اوراق بدون ریسک</h2>
-                            <p id="description_text">اسناد خزانه اوراق بهادار و اسناد خزانه اسلامی همگی در صفحه ای جداگانه و به دلخواه شما مرتب میشوند تا بررسی انواع اوراق راحت تر گردد. لازم به ذکر است این اوراق بدون ریسک هستند.</p>
+                    </div>
+                </div>
+            </li>
+            <li class="cd-single-item cd-not-visible cd-move-right">
+                <div class="cd-caption">
+                    <h2 id="description_title">سایر اوراق</h2>
+                    <p id="description_text">لیست انواع اوراق با درآمد ثابت که به موجب قانون یا مجوز بانک مرکزی جمهوری
+                        اسلامی ایران به قیمت اسمی مشخص برای مدت معین ‌و برای تأمین بخشی از منابع مالی مورد نیاز طرح‌های
+                        عمرانی- انتفاعی منتشر می‌شوند و به سرمایه‌گذارانی که قصد مشارکت در اجرای طرح‌های‌ یاد شده را
+                        دارند جهت مطالعه دقیق ترفراهم شده است.</p>
+                </div>
+                <div class="cd-image-container">
+                    <div>
+                        <div class="cd-phone-frame"></div>
+                        <div class="cd-image-wrapper">
+                            <img src="img/screen-3.png" data-video="video/video-3" alt="Screen Preview 3">
                         </div>
-                        <div class = "cd-image-container">
-                            <div>
-                                <div class = "cd-phone-frame"></div>
-                                <div class = "cd-image-wrapper">
-                                    <img src = "img/screen-2.png" data-video = "video/video-2" alt = "">
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class = "cd-single-item cd-not-visible cd-move-right">
-                        <div class = "cd-caption">
-                            <h2 id = "description_title">بانک ها</h2>
-                            <p id = "description_text">در این قسمت به معرفی بانک های اسلامی پرداخته شده است و می توانید به تمامی اطلاعات آن ها از قبیل انواع حساب ها، میزان سود حساب های کوتاه مدت، بلند مدت، صدور کارت های بانکی آن ها و ... دسترسی داشته باشید.</p>
-                        </div>
-                        <div class = "cd-image-container">
-                            <div>
-                                <div class = "cd-phone-frame"></div>
-                                <div class = "cd-image-wrapper">
-                                    <img src = "img/screen-3.png" data-video="video/video-3" alt="Screen Preview 3">
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+                    </div>
+                </div>
+            </li>
 
-                    <li class = "cd-single-item cd-not-visible cd-move-right">
-                        <div class = "cd-caption">
-                            <h2 id = "description_title">صندوق ها</h2>
-                            <p id = "description_text">برای اینکه شما بتوانید مناسب ترین صندوق سرمایه گذاری انتخاب کنید، اطلاعات صندوق های سرمایه گذاری شامل متولی، ضامن، راه های ارتباطی و .... در صفحه ای جداگانه آورده شده است.</p>
+            <li class="cd-single-item cd-not-visible cd-move-right">
+                <div class="cd-caption">
+                    <h2 id="description_title">سایر اوراق</h2>
+                    <p id="description_text">در این قسمت برنامه اطلاعات انواع اوراق به صورت جامع جهت استفاده سرمایه
+                        گذاران و به صورت کاملا کاربردی شامل روزهای باقی مانده تاسررسید و نرخ بازده و تاریخ انتشار و
+                        سررسید و ضامن اوراق گرد آوری شده است.</p>
+                </div>
+                <div class="cd-image-container">
+                    <div>
+                        <div class="cd-phone-frame"></div>
+                        <div class="cd-image-wrapper">
+                            <img src="img/screen-4.png" data-video="video/video-4" alt="Screen Preview 3">
                         </div>
-                        <div class = "cd-image-container">
-                            <div>
-                                <div class = "cd-phone-frame"></div>
-                                <div class = "cd-image-wrapper">
-                                    <img src = "img/screen-4.png" data-video="video/video-4" alt="Screen Preview 3">
-                                </div>
-                            </div>
+                    </div>
+                </div>
+            </li>
+            <li class="cd-single-item cd-not-visible cd-move-right">
+                <div class="cd-caption">
+                    <h2 id="description_title">بانک ها</h2>
+                    <p id="description_text">در این بخش به معرفی تمامی بانک های اسلامی پرداخته شده است که شما می توانید
+                        به تمامی اطلاعات آن ها از قبیل انواع حساب ها، میزان سود حساب های کوتاه مدت، بلند مدت، صدور کارت
+                        های بانکی آن ها و ... را در دسترس داشته باشید.</p>
+                </div>
+                <div class="cd-image-container">
+                    <div>
+                        <div class="cd-phone-frame"></div>
+                        <div class="cd-image-wrapper">
+                            <img src="img/screen-5.png" data-video="video/video-5" alt="Screen Preview 3">
                         </div>
-                    </li>
-                    <li class = "cd-single-item cd-not-visible cd-move-right">
-                        <div class = "cd-caption">
-                            <h2 id = "description_title">پیشنهاد سناریو</h2>
-                            <p id = "description_text">در این قسمت کاربران می توانند با توجه به میزان سرمایه و زمان سرمایه گذاری که اعلام می کنند بهترین پیشنهاد را با در نظر گرفتن پارامترهای ورودی از سیستم دریافت کنند.
-                            </p>
+                    </div>
+                </div>
+            </li>
+            <li class="cd-single-item cd-not-visible cd-move-right">
+                <div class="cd-caption">
+                    <h2 id="description_title">بانک ها</h2>
+                    <p id="description_text">جهت سهولت امردسترسی به آدرس وب سایت و شماره تلفن دفاتر مرکزی درنظر گرفته
+                        شده است.</p>
+                </div>
+                <div class="cd-image-container">
+                    <div>
+                        <div class="cd-phone-frame"></div>
+                        <div class="cd-image-wrapper">
+                            <img src="img/screen-6.png" data-video="video/video-6" alt="Screen Preview 3">
                         </div>
-                        <div class = "cd-image-container">
-                            <div>
-                                <div class = "cd-phone-frame"></div>
-                                <div class = "cd-image-wrapper">
-                                    <img src = "img/screen-5.png" data-video="video/video-5" alt="Screen Preview 3">
-                                </div>
-                            </div>
+                    </div>
+                </div>
+            </li>
+            <li class="cd-single-item cd-not-visible cd-move-right">
+                <div class="cd-caption">
+                    <h2 id="description_title">صندوق های درآمد ثابت</h2>
+                    <p id="description_text">همچنین در این نرم افزار به تمامی صندوق های سرمایه گذاری با درآمد ثابت
+                        پرداخته ایم که با رابط کاربری آسان وطراحی کاربر پسند تمامی مشخصات صندوقهای با درآمد ثابت اعم از
+                        ضامن نقدشوندگی و متولیان و مدیران و بازدهی صندوق در دوره های زمانی متفاوت از روز تا سال، بسته به
+                        نیاز کاربر و مشخصات مورد نیاز معامله شامل قیمت صدور وابطال و همچنین ترکیب دارایی های صندوق به
+                        تفکیک و مشخص شده توسط نمودار آورده شده است.</p>
+                </div>
+                <div class="cd-image-container">
+                    <div>
+                        <div class="cd-phone-frame"></div>
+                        <div class="cd-image-wrapper">
+                            <img src="img/screen-7.png" data-video="video/video-7" alt="Screen Preview 3">
                         </div>
-                    </li>
+                    </div>
+                </div>
+            </li>
+            <li class="cd-single-item cd-not-visible cd-move-right">
+                <div class="cd-caption">
+                    <h2 id="description_title">صندوق های درآمد ثابت</h2>
+                    <p id="description_text">شما می توانید با توجه به سود یا هر آنچه که بخواهید آنها را مرتب کنید و بدون
+                        صرف وقت زیاد و جست و جو همه صندوق های با درآمد ثابت را به صورت یکجا داشته باشید.</p>
+                </div>
+                <div class="cd-image-container">
+                    <div>
+                        <div class="cd-phone-frame"></div>
+                        <div class="cd-image-wrapper">
+                            <img src="img/screen-8.png" data-video="video/video-8" alt="Screen Preview 3">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="cd-single-item cd-not-visible cd-move-right">
+                <div class="cd-caption">
+                    <h2 id="description_title">ماشین حساب</h2>
+                    <p id="description_text">بعلاوه جهت سهولت امر، ماشین حساب محاسبه نرخ بازده تا سررسید طراحی و در
+                        اختیار کاربر قرار گرفته است که با وارد کردن قیمت خرید برگه مورد نظر و ورود تاریخ خرید نرخ بازده
+                        تا سررسید میشود</p>
+                </div>
+                <div class="cd-image-container">
+                    <div>
+                        <div class="cd-phone-frame"></div>
+                        <div class="cd-image-wrapper">
+                            <img src="img/screen-9.jpg" data-video="video/video-9" alt="Screen Preview 3">
+                        </div>
+                    </div>
+                </div>
+            </li>
 
 
-                </ul>
-            </div>
+        </ul>
+    </div>
 
-            <div class = "cd-slider-nav">
-                <a class = "cd-prev" href="#0">قبلی</a>
-                <a class = "cd-next" href="#0">بعدی</a>
-            </div>
+    <div class="cd-slider-nav">
+        <a class="cd-prev" href="#0">قبلی</a>
+        <a class="cd-next" href="#0">بعدی</a>
+    </div>
 
-            <div class="cd-loader"></div>
-        </main>
-        <script src="js/jquery-2.1.1.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+    <div class="cd-loader"></div>
+</main>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script>
+</body>
 </html>
