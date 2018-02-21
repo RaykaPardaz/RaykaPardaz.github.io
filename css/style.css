@@ -4,11 +4,6 @@
 }
 
 @font-face {
-    font-family: "regular";
-    src: url("fonts/regular.ttf");
-}
-
-@font-face {
     font-family: "number";
     src: url("fonts/number.ttf");
 }
@@ -16,16 +11,6 @@
 @font-face {
     font-family: "bold";
     src: url("fonts/bold.ttf");
-}
-
-@font-face {
-    font-family: "light";
-    src: url("fonts/light.ttf");
-}
-
-@font-face {
-    font-family: "medium";
-    src: url("fonts/medium.ttf");
 }
 
 html * {
@@ -744,6 +729,7 @@ html, body {
     display: none;
 }
 
+
 #description_text {
     font-family: 'ultra', serif;
     text-align: justify;
@@ -754,4 +740,27 @@ html, body {
 #description_title {
     font-family: 'bold', serif;
     direction: rtl;
+}
+
+.continue_link {
+    font-size: xx-large;
+    font-family: number, serif;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-bottom: 2px solid black;
+    padding-bottom: 0;
+    line-height: 10%;
+}
+
+.continue_link:hover {
+    background-color: #3f435f;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#app_name {
+    font-size: large;
 }
